@@ -48,7 +48,7 @@ table {
 
 /* LAYOUT STYLES */
 html {
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
   background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  color: #6d6d6d;
+  color: #1d1d1d;
 }
 
 a {
@@ -318,11 +318,17 @@ blockquote {
 ul li {
   list-style: disc inside;
   padding-left: 20px;
+  padding-bottom: 3px;
+  text-indent: -18px;
+  margin-left: 18px;
 }
 
 ol li {
   list-style: decimal inside;
   padding-left: 3px;
+  padding-bottom: 3px;
+  text-indent: -18px;
+  margin-left: 18px;
 }
 
 dl dt {
