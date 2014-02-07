@@ -8,16 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1020"
-   height="680"
+   width="1000"
+   height="610"
    id="svg4273"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="cms2_bs.svg"
-   style="enable-background:new"
-   inkscape:export-filename="/Users/maggiolo/Downloads/cms2_64.png"
-   inkscape:export-xdpi="8.4705887"
-   inkscape:export-ydpi="8.4705887">
+   sodipodi:docname="cms.svg"
+   style="enable-background:new">
   <metadata
      id="metadata4303">
     <rdf:RDF>
@@ -30,30 +27,6 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1087"
-     id="namedview4301"
-     showgrid="false"
-     inkscape:zoom="1.2779412"
-     inkscape:cx="510"
-     inkscape:cy="340"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g3145"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
   <defs
      id="defs4275">
     <marker
@@ -141,7 +114,8 @@
     </clipPath>
     <filter
        inkscape:collect="always"
-       id="filter5426">
+       id="filter5426"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="8.3927845"
@@ -153,19 +127,19 @@
      id="layer2"
      inkscape:label="Layer"
      style="display:inline"
-     transform="translate(0,110.25342)" />
+     transform="translate(-0.50000002,60.211939)" />
   <g
-     style="display:inline;opacity:1"
+     style="display:inline"
      inkscape:label="Layer copy"
      id="g3145"
      inkscape:groupmode="layer"
-     transform="translate(0,110.25342)">
+     transform="translate(-0.50000002,60.211939)">
     <g
        id="g5374"
-       transform="translate(-9.3573181,14.984028)"
-       style="opacity:0.2;filter:url(#filter5426);stroke:#000000;stroke-opacity:1">
+       transform="translate(-9.5,15.041481)"
+       style="opacity:0.2;stroke:#000000;stroke-opacity:1;filter:url(#filter5426)">
       <g
-         style="display:inline;enable-background:new;stroke:#000000;stroke-opacity:1"
+         style="stroke:#000000;stroke-opacity:1;display:inline;enable-background:new"
          id="g5376"
          clip-path="url(#clipPath3050)"
          transform="translate(0,-84.52671)">
@@ -187,7 +161,7 @@
       <use
          xlink:href="#ring"
          id="use5382"
-         style="fill:none;stroke:#000000;stroke-width:30;display:inline;enable-background:new;stroke-opacity:1"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-opacity:1;display:inline;enable-background:new"
          x="0"
          y="0"
          width="1020"
@@ -199,13 +173,13 @@
          width="1020"
          y="0"
          x="0"
-         style="fill:none;stroke:#000000;stroke-width:30;display:inline;enable-background:new;stroke-opacity:1"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-opacity:1;display:inline;enable-background:new"
          id="use5384"
          xlink:href="#ring"
          clip-path="url(#clipPath4946)"
          transform="translate(0,-84.52671)" />
       <g
-         style="fill:none;stroke:#000000;stroke-width:30;display:inline;enable-background:new;stroke-opacity:1"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-opacity:1;display:inline;enable-background:new"
          id="g5386"
          clip-path="url(#clipPath3057)"
          transform="translate(0,-84.52671)">
