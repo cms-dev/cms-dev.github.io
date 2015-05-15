@@ -300,6 +300,17 @@ h6 {
   color: #303030;
 }
 
+h1 a.permalink, h2 a.permalink, h3 a.permalink,
+h4 a.permalink, h5 a.permalink, h6 a.permalink {
+  display: none;
+  color: #6F6F6F;
+}
+
+h1:hover a.permalink, h2:hover a.permalink, h3:hover a.permalink,
+h4:hover a.permalink, h5:hover a.permalink, h6:hover a.permalink {
+  display: inline-block;
+}
+
 p {
   margin-bottom: 20px;
 }

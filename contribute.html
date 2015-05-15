@@ -35,7 +35,7 @@
 
         <hr>
 
-<h1>How to contribute</h1>
+<h1>How to contribute <a class="permalink" href="#how_to" name="how_to">§</a></h1>
 
 <p>Before starting the design and implementation of any major feature, please contact the core team via the <a href="http://www.freelists.org/list/contestms-dev">development mailing list</a> to organize the effort and making sure there is no duplication of work.</p>
 
@@ -65,7 +65,7 @@
 <p>For a big change that requires several commits, we may want to review it in several steps that may also break cms or the tests. Since we try to keep the master branch as clean as possible, we will create a feature branch on cms-dev, and you will issue pull requests against that branch. The review process will be the same, but you will be allowed to temporarily break tests and features (not to break the style!). When the feature is completed, we will agree on how to rebase the branch on top of master and we will merge it.</p>
 
 
-<h1>Contribution ideas</h1>
+<h1>Contribution ideas <a class="permalink" href="#ideas" name="ideas">§</a></h1>
 
 <p>The following are some ideas for self-contained projects to expand CMS&rsquo;s features. All of these require some knowledge of Python, SQLAlchemy and relational databases. Experience with the organization of programming contests and training camps is a plus.</p>
 
@@ -78,7 +78,7 @@
 <hr>
 
 
-<h2>Representative submissions</h2>
+<h2>Representative submissions <a class="permalink" href="#representative_subs" name="representative_subs">§</a></h2>
 
 <p>Allow admins to store, for each task a set of representative submissions, intended to have a precise result (for example: a wrong submission which should score zero points, a correct one which should score full points, and an intermediate one which should score half of the points. Admins should be able to test at any moment that the representative submissions score exactly as expected.</p>
 
@@ -104,7 +104,7 @@
 
 <hr>
 
-<h2>Expand test coverage</h2>
+<h2>Expand test coverage <a class="permalink" href="#expand_test" name="expand_test">§</a></h2>
 
 <p>CMS currently has a functional test that runs all the services (apart from RWS) and simulating the creation of contests and tasks by the admins, and some submissions from the user. There are some unit tests but very limited. The task is to increase the coverage of the unit tests (possibly reorganizing code to make it more testable), extend the functional tests to other aspects (like importing of tasks) and to speed up the execution of functional tests.</p>
 
@@ -118,7 +118,7 @@
 
 <hr>
 
-<h2>In-browser code editing</h2>
+<h2>In-browser code editing <a class="permalink" href="#in_browser_edit" name="in_browser_edit">§</a></h2>
 
 <p>Many online services for programmers (e.g., github) are starting to offer in-browsing editing of source files. It would be very cool to add these capabilities to CMS, allowing editing of submissions directly from the browser. Existing open source projects could be used, like <a href="http://ace.c9.io/">Ace</a> or <a href="http://codemirror.net/">CodeMirror</a>. There is a lot of potential for follow ups, like for example branching and auto-snapshotting.</p>
 
@@ -143,7 +143,7 @@
 
 <hr>
 
-<h2>Contest statistics and graphs</h2>
+<h2>Contest statistics and graphs <a class="permalink" href="#contest_stats" name="contest_stats">§</a></h2>
 
 <p>After an official contest is often nice to have some easily retrievable statistics about scores distributions, language usage, and so on.</p>
 
@@ -170,7 +170,7 @@
 
 <hr>
 
-<h2>Exposing complexity guess</h2>
+<h2>Exposing complexity guess <a class="permalink" href="#complexity_guess" name="complexity_guess">§</a></h2>
 
 <p>There is already an experimental code in cmscontrib that tries to compute the complexity of the contestants&rsquo; solutions based on the size of the input. A similar computation was suggested as a more sane way of scoring at some IOI conference, though it has many problems in reliability and is subject to cheating. Still, it would be interesting for admins to see this information, for example to have an idea of the cleverness of the solutions of two contestants.</p>
 
@@ -195,7 +195,7 @@
 
 <hr>
 
-<h2>Ease the usage of CMS in a training settings</h2>
+<h2>Ease the usage of CMS in a training settings <a class="permalink" href="#ease_training" name="ease_training">§</a></h2>
 
 <p>At least, make sure that all interfaces are usable with a high number of contestants, tasks (and of contests for RWS). This may mean to have adaptive UIs after a certain threshold (for example, not showing a single page in RWS if you have 10k contestants.</p>
 
@@ -213,7 +213,9 @@
 
 <hr>
 
-<h2>Move users out of the contest scope</h2>
+<h2>Move users out of the contest scope <a class="permalink" href="#decouple_users" name="decouple_users">§</a></h2>
+
+<p><strong>Note</strong> this is currently in progress <a href="https://github.com/cms-dev/cms/pull/346">here.</a></p>
 
 <p>When there are multiple contests in the database it&rsquo;s common for them to share the set of users (e.g. many-day competitions like the IOI, training camps, online judges, etc.). Having duplicated user objects doesn&rsquo;t matter much to the contestants themselves, but it&rsquo;s a pain for admins. It could make sense to have users become top-level object, and have a many-to-many relationship with contests (i.e. &ldquo;participation&rdquo;) hold details like starting time, seating, extra time, etc.</p>
 
@@ -230,7 +232,7 @@
 
 <hr>
 
-<h2>Team competitions</h2>
+<h2>Team competitions <a class="permalink" href="#team_contests" name="team_contests">§</a></h2>
 
 <p>Many online contests are in the form of team competitions: multiple contestants cooperate to solve the same set of problems. The easiest way to implement this without changing a lot of code is to put the team information in the user table and add a new table for team participants (&ldquo;sub-users&quot;?). As extras, with in-browser code editing it would be nice to allow real-time cooperation, and also for admins it would be nice to be able to see who wrote a specific piece of code.</p>
 
@@ -256,7 +258,7 @@
 
 <hr>
 
-<h2>Visual solutions in RWS</h2>
+<h2>Visual solutions in RWS <a class="permalink" href="#rws_visualize" name="rws_visualize">§</a></h2>
 
 <p>Allow spectators to be more involved with the contest by giving them the possibility of looking at the internal functioning of the participants&rsquo; submission. During the evaluation process, CMS will record in the submission one or more opaque pieces of data, that will be passed to RWS; on his side, RWS will have a plugin able to translate back each piece of data into the solution given by the contestant&rsquo;s submission to a simple input, and to show this solution to the spectators. Bonus point for implementing this also for interactive tasks and showing the spectators an animation.</p>
 
@@ -283,7 +285,7 @@
 
 <hr>
 
-<h2>Mobile-ready RWS (or an app?)</h2>
+<h2>Mobile-ready RWS (or an app?) <a class="permalink" href="#rws_mobile" name="rws_mobile">§</a></h2>
 
 <p>The RankingWebServer works awfully on mobile devices (mostly phones) due to their small screens and to the mouse-driven interaction model. It&rsquo;s advisable to redesign the client to handle these use-cases better, or to develop dedicated applications for mobile (Android, iOS, etc.). The latter ones should get the data from the same server that provides the current in-browser scoreboard (i.e. communicate over the existing HTTP API). Notifications could be interesting too.</p>
 
@@ -301,7 +303,7 @@
 
 <hr>
 
-<h2>Non-interactive scoreboard for public screening</h2>
+<h2>Non-interactive scoreboard for public screening <a class="permalink" href="#rws_totem" name="rws_totem">§</a></h2>
 
 <p>Important competitions may have on-site large screens, projectors or &ldquo;totems&rdquo; to display the live scoreboard to the audience, so they don&rsquo;t have to use their laptops or phones (which wouldn&rsquo;t work anyway, see above). These use-cases have a totally different set of needs than an interactive online ranking. These are best addressed by writing a new and different scoreboard client. Again, the server should remain the same: we just need a new client.</p>
 
