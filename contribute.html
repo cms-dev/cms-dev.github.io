@@ -210,26 +210,6 @@
 
 
 
-
-<hr>
-
-<h2>Move users out of the contest scope <a class="permalink" href="#decouple_users" name="decouple_users">§</a></h2>
-
-<p><strong>Note</strong> this is currently in progress <a href="https://github.com/cms-dev/cms/pull/346">here.</a></p>
-
-<p>When there are multiple contests in the database it&rsquo;s common for them to share the set of users (e.g. many-day competitions like the IOI, training camps, online judges, etc.). Having duplicated user objects doesn&rsquo;t matter much to the contestants themselves, but it&rsquo;s a pain for admins. It could make sense to have users become top-level object, and have a many-to-many relationship with contests (i.e. &ldquo;participation&rdquo;) hold details like starting time, seating, extra time, etc.</p>
-
-<p><strong>Additional requirements</strong>: training camps experience.</p>
-
-<p><strong>Difficulty</strong>: high.</p>
-
-<p><strong>Size</strong>: medium.</p>
-
-
-
-
-
-
 <hr>
 
 <h2>Team competitions <a class="permalink" href="#team_contests" name="team_contests">§</a></h2>
