@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="favicon" content="./cms.svg">
+    <meta name="description" content="CMS, or Contest Management System, is an open source grading system handling IOI-like programming competition.">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="shortcut icon" href="./images/cms_icon.png" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+    <title>CMS :: Main</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <img src="./cms.svg"/>
+          <h1>CMS :: Main</h1>
+          <h2>Contest Management System</h2>
+          <p><a href="http://cms.di.unipi.it/jenkins/job/cms.cms-dev/"><img src="http://cms.di.unipi.it/jenkins/buildStatus/icon?job=cms.cms-dev"></a></p>
+          <p><a href="https://gitter.im/cms-dev/cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg"></a></p>
+        </header>
+
+        <div class="button">
+          <a href="./index.html">Main</a>
+          <a href="./screenshots.html">Screenshots</a>
+          <a href="./testimonials.html">Testimonials</a>
+          <a href="./contribute.html">Contribute</a>
+          <a href="./related.html">Related</a>
+        </div>
+
+        <hr>
+
+        <div class="popup-gallery">
+          <a href="screenshots/cws1.png" title="The login page presented to the contestant. In the upper-right corner there is a language selector."><img src="screenshots/cws1.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/cws2.png" title="The task view, where the statement can be downloaded. It's possible to set up attachments for a task (e.g. to show a sample implementation to the contestant)."><img src="screenshots/cws2.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/cws3.png" title="The submission view, where files can be submitted. This specific task is a TwoStep kind of task (like IOI2011's parrots), so the contestant must send two files (or a single archive containing two files)."><img src="screenshots/cws2.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/rws1.png" title="The ranking page presented as seen by contest spectators. The clock shows that the contest has started about 2.5 hours ago. It's possible to show the remaining time by clicking on the clock."><img src="screenshots/rws1.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/rws2.png" title="When you click on a row in the ranking page, a summary of the contestant's activity pops up."><img src="screenshots/rws2.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/aws1.png" title="The admin page of a single contest. You can see that there's an evaluation enqueued, and that the 4 available workers are busy running different testcases."><img src="screenshots/aws1.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/aws2.png" title="The 'Resource usage' page lets you monitor which services are up and lets you analyze how many resources they are consuming."><img src="screenshots/aws2.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/aws3.png" title="This is the notification that the admins see when a contestant asks a question during a contest."><img src="screenshots/aws3.small.png" width="200" data-pin-nopin="true"></a>
+          <a href="screenshots/aws4.png" title="As shown here, the admin can decide to write an extended answer or just use a precompiled one."><img src="screenshots/aws4.small.png" width="200" data-pin-nopin="true"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+      $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function(item) {
+            return item.el.attr('title');
+          }
+        }
+      });
+    });
+    </script>
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://cms.di.unipi.it/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://cms.di.unipi.it/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+  </body>
+</html>
