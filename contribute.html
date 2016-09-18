@@ -23,7 +23,8 @@
           <img src="./cms.svg"/>
           <h1>CMS :: Contribute</h1>
           <h2>Contest Management System</h2>
-          <p><a href='http://cms.di.unipi.it/jenkins/job/cms.cms-dev/'><img src='http://cms.di.unipi.it/jenkins/buildStatus/icon?job=cms.cms-dev'></a></p>
+          <p><a href="https://travis-ci.org/cms-dev/cms/branches"><img src="https://travis-ci.org/cms-dev/cms.svg?branch=master"></a></p>
+          <p><a href="https://gitter.im/cms-dev/cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg"></a></p>
         </header>
 
         <div class="button">
@@ -55,10 +56,10 @@
   <li>fork cms-dev/cms on github;</li>
   <li>create a new branch and commit there your change(s);</li>
   <li>create a pull request against the master branch of cms-dev/cms</li>
-  <li>after about 20 minutes, check on <a href="http://cms.di.unipi.it/jenkins">Jenkins</a> that your pull request passes all the tests, and that you did not introduce PEP8 or (too many) Pylint errors;</li>
+  <li>after about 5 minutes, check on <a href="https://travis-ci.org/cms-dev/cms/pull_requests">Travis CI</a> that your pull request passes all the tests;</li>
   <li>wait for a member of the core team to review the pull request;</li>
   <li>implement the required changes as new commits in your branch <strong>without modifying</strong> the existing commits;</li>
-  <li>the pull request will pick up the new commits and the cycle begins again (Jenkins, review, new follow up commits)</li>
+  <li>the pull request will pick up the new commits and the cycle begins again (Travis, review, new follow up commits)</li>
   <li>when the reviewer agree on the change, you should rebase your branch in a way that makes sense, and inform the reviewer when it's done</li>
   <li>the reviewer will then push your change to master</li>
 </ol>
