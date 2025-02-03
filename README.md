@@ -1,4 +1,3 @@
-cms-dev.github.io
-=================
+# [cms-dev.github.io](https://cms-dev.github.io)
 
-Website for the cms-dev organization.
+Website for CMS and the cms-dev organization.
