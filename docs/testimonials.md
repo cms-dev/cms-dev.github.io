@@ -63,6 +63,7 @@ aware of at least the following ones:
 - South Africa, since 2015.
 - Ireland, since 2016.
 - Latvia, since 2017.
+- Thailand, since 2022.
 
 ## Training camps
 
