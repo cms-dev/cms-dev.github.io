@@ -60,6 +60,7 @@ aware of at least the following ones:
 - Argentina, since 2014.
 - Malaysia, since 2014.
 - Mongolia, since 2014.
+- Estonia, since 2014.
 - South Africa, since 2015.
 - Ireland, since 2016.
 - Latvia, since 2017.
