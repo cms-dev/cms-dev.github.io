@@ -10,9 +10,9 @@ contests, tasks, scorings, etc. Nonetheless, CMS has been explicitly build to be
 used in the 2012 International Olympiad in Informatics, held in September 2012
 in Italy.
 
-## Stable version: 1.5.0
+## Stable version: 1.5.1
 
-[:material-download: Download .tar.gz](https://github.com/cms-dev/cms/releases/download/v1.5.0/v1.5.0.tar.gz){ .md-button }
+[:material-download: Download .tar.gz](https://github.com/cms-dev/cms/releases/download/v1.5.1/v1.5.1.tar.gz){ .md-button }
 [:simple-github: View on GitHub](https://github.com/cms-dev/cms/tree/v1.5){ .md-button }
 [:simple-readthedocs: Read the docs](https://cms.readthedocs.io/en/v1.5){ .md-button }
 
