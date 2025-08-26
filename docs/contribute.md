@@ -1,5 +1,8 @@
 ## How to contribute
 
+If you want to help translate CMS to your language, you can do so on
+[Weblate](https://hosted.weblate.org/engage/cms/).
+
 If you are interested in implementing major features, please [contact the core
 team](./contact.md) before starting the design and implementation, so that the
 effort can be better organized and we can make sure there is no duplication of
