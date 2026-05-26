@@ -46,8 +46,11 @@ are aware of the following.
 Many countries choose CMS to run their National programming contests. We are
 aware of at least the following ones:
 
+<!-- Sorted by year breaking ties by name -->
+
 - Italy, since 2011.
 - Australia, since 2012.
+- Bosnia and Herzegovina, since 2013.
 - Croatia, since 2013.
 - Slovenia, since 2013.
 - Norway, since 2013.
